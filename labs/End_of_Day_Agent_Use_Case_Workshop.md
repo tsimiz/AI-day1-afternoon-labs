@@ -5,7 +5,7 @@ Audience: All participants
 
 ## Purpose
 
-This workshop turns the day into practical Topcon-relevant ideas.
+This workshop turns the day into practical ideas.
 
 You will work in mixed groups and identify one possible agent use case.
 
@@ -18,7 +18,7 @@ Avoid designing an agent that does everything.
 Discuss:
 
 ```text
-Where could an agent help at Topcon?
+Where could an agent help?
 ```
 
 Pick one use case.
