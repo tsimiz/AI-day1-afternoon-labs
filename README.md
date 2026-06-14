@@ -72,6 +72,8 @@ Useful files:
 
 [Service Pilot Guide Skill](agent/Service_Pilot_Guide_Skill.md)
 
+[Scope Boundary Patch](agent/Service_Pilot_Guide_Scope_Boundary_Patch.md)
+
 [Demo Test Questions](agent/Service_Pilot_Guide_Demo_Test_Questions.md)
 
 [Track B Agent Test Results](worksheets/Track_B_Agent_Test_Results.md)
