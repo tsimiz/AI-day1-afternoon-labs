@@ -1,4 +1,4 @@
-# Day 1 Afternoon Labs — Service Excellence Pilot
+# 🧪 Day 1 Afternoon Labs — Service Excellence Pilot
 
 Welcome to the Day 1 afternoon labs.
 
@@ -6,7 +6,7 @@ This repository contains the lab instructions, worksheets, and agent files for t
 
 The scenario is fictional. All files are synthetic.
 
-## Important safety reminder
+## ⚠️ Important safety reminder
 
 Do not upload:
 
@@ -19,9 +19,9 @@ Do not upload:
 
 Use only the synthetic files provided for this training.
 
-## Choose your track
+## 🛤️ Choose your track
 
-### Track A — Business users
+### 💼 Track A — Business users
 
 Use M365 Copilot to create:
 
@@ -47,7 +47,7 @@ Useful worksheets:
 
 ---
 
-### Track B — Technical users / power users
+### 🛠️ Track B — Technical users / power users
 
 Use Copilot Studio to:
 
@@ -80,7 +80,7 @@ Useful files:
 
 ---
 
-## Shared workshop
+## 🤝 Shared workshop
 
 All participants use this at the end of the day:
 
@@ -90,7 +90,7 @@ Workshop worksheet:
 
 [Agent Use Case Canvas](worksheets/Agent_Use_Case_Canvas.md)
 
-## Data files
+## 📂 Data files
 
 The synthetic source files are in the `data` folder.
 
