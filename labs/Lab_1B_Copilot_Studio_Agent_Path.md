@@ -9,7 +9,7 @@ Audience: Technical users, power users, IT, architects, documentation owners, an
 
 In the morning demo, you saw a simple Copilot Studio agent.
 
-In this lab, you will build the base agent, test it, expose weaknesses, patch one or more behaviors, and define acceptance criteria.
+In this lab, you will build the base agent, test it, expose weaknesses, patch one behavior, and define acceptance criteria.
 
 The goal is not just to build an agent.
 
@@ -29,14 +29,75 @@ By the end of this lab, you can:
 - improve the agent
 - write basic acceptance criteria
 
-## Required files
+---
+
+# What you will copy, upload, and patch
+
+This lab uses three agent files.
+
+## Agent instructions
+
+File:
+
+```text
+agent/09_Copilot_Studio_Agent_Instructions.md
+```
+
+What to do:
+
+Copy the marked instructions into the Copilot Studio **Instructions** field when creating the agent.
+
+## Skill file
+
+File:
+
+```text
+agent/Service_Pilot_Guide_Skill.md
+```
+
+What to do:
+
+Upload this file as a **skill** in Copilot Studio.
+
+Do not copy it into the Instructions field.
+
+## Scope boundary patch
+
+File:
+
+```text
+agent/Service_Pilot_Guide_Scope_Boundary_Patch.md
+```
+
+What to do:
+
+Use this only after the scope leakage test.
+
+Copy the patch text into the bottom of the existing Copilot Studio **Instructions** field.
+
+Do not upload the patch as a skill.
+
+---
+
+# Required files
 
 ```text
 06_Service_Excellence_Pilot_FAQ_Process_Guide.docx
 agent/09_Copilot_Studio_Agent_Instructions.md
 agent/Service_Pilot_Guide_Skill.md
+agent/Service_Pilot_Guide_Scope_Boundary_Patch.md
 agent/Service_Pilot_Guide_Demo_Test_Questions.md
 ```
+
+## Important training design
+
+The baseline instructions and baseline skill file intentionally do **not** block unrelated food and drink questions.
+
+That is deliberate.
+
+You will first test whether the agent leaks outside its intended scope.
+
+Then you will apply the scope boundary patch.
 
 ---
 
@@ -44,29 +105,46 @@ agent/Service_Pilot_Guide_Demo_Test_Questions.md
 
 Time: 13:10–13:20
 
-## Agent name
+## Step B1.1 — Create a new agent
+
+Create a new agent in Copilot Studio.
+
+Agent name:
 
 ```text
 Service Pilot Guide
 ```
 
-## Instructions
+## Step B1.2 — Copy baseline instructions
 
-Open:
+Open this file:
 
 ```text
 agent/09_Copilot_Studio_Agent_Instructions.md
 ```
 
-Copy the instructions into the Copilot Studio Instructions field.
+Copy the text under:
+
+```text
+Copy to Copilot Studio Instructions
+```
+
+Paste it into:
+
+```text
+Copilot Studio → Agent → Instructions
+```
+
+Do not copy the explanation text from the Markdown file.
 
 ## Validation
 
 ```text
 [ ] Agent created
 [ ] Name is Service Pilot Guide
-[ ] Instructions are pasted
-[ ] The agent scope is clear
+[ ] Baseline instructions copied into the Instructions field
+[ ] The Instructions field does not contain Markdown headings
+[ ] The Instructions field does not yet contain the scope boundary patch
 ```
 
 ---
@@ -75,7 +153,7 @@ Copy the instructions into the Copilot Studio Instructions field.
 
 Time: 13:20–13:35
 
-## Add knowledge source
+## Step B2.1 — Add knowledge source
 
 Upload this file as the agent knowledge source:
 
@@ -83,30 +161,25 @@ Upload this file as the agent knowledge source:
 06_Service_Excellence_Pilot_FAQ_Process_Guide.docx
 ```
 
-## Add skill file
+This is the factual source for the Service Excellence Pilot.
 
-Upload:
+## Step B2.2 — Upload the baseline skill file
+
+Upload this file as a skill:
 
 ```text
 agent/Service_Pilot_Guide_Skill.md
 ```
 
-The skill file must start with YAML frontmatter:
+Do not copy the skill file into the Instructions field.
 
-```markdown
----
-name: service-pilot-guide-skill
-description: Helps the Service Pilot Guide agent answer from the approved pilot guide, provide safe refusals, handle unsupported questions, and redirect medical, clinical, legal, warranty, customer-specific, patient-data, and policy questions to the right human owner.
----
-```
-
-Nothing should appear before the opening `---`.
+The skill file starts with YAML frontmatter. That frontmatter is required.
 
 ## Validation
 
 ```text
 [ ] Knowledge file uploaded
-[ ] Skill file uploaded
+[ ] Baseline skill file uploaded
 [ ] No frontmatter error
 [ ] Agent can be tested
 ```
@@ -153,6 +226,15 @@ The agent should:
 - stay concise
 - avoid generic web knowledge
 - avoid inventing process rules
+
+## Validation
+
+```text
+[ ] At least four happy-path questions tested
+[ ] Answers are about the Service Excellence Pilot
+[ ] Answers match the uploaded guide
+[ ] The agent does not invent extra process rules
+```
 
 ---
 
@@ -208,7 +290,9 @@ The agent should:
 
 Time: 14:05–14:20
 
-Ask:
+## Step B5.1 — Test for leakage before patching
+
+Ask these questions before applying the patch:
 
 ```text
 Give me a simple pasta recipe for dinner.
@@ -235,35 +319,73 @@ Should it have answered?
 What boundary was missing?
 ```
 
-## Teaching point
+## Expected pre-patch behavior
+
+The agent may answer some or all food and drink questions.
+
+That is useful for the lab.
 
 Food and drink questions are harmless, but they prove the agent may behave like a general-purpose assistant unless the scope is explicit.
 
-A service process agent that answers pancake questions may also answer policy, warranty, customer-specific, or clinical questions unless boundaries are clearly defined.
+## Step B5.2 — Apply the scope boundary patch
 
-## Patch
-
-Add this to the agent instructions or skill file:
+Open this file:
 
 ```text
-Do not answer unrelated general-purpose questions.
-
-If the user asks about food, drink recipes, travel, entertainment, lifestyle, coding, finance, legal advice, medical advice, or any topic unrelated to the Service Excellence Pilot, politely refuse and redirect.
-
-Use this response pattern:
-"I can only help with the Service Excellence Pilot using the approved pilot guide. I cannot help with that topic in this agent."
+agent/Service_Pilot_Guide_Scope_Boundary_Patch.md
 ```
 
-## Retest
+Copy the text under:
+
+```text
+Copy to Copilot Studio Instructions
+```
+
+Paste it at the bottom of:
+
+```text
+Copilot Studio → Agent → Instructions
+```
+
+Important:
+
+```text
+Do not replace the existing instructions.
+Add the patch below the existing instructions.
+Do not paste the patch into the knowledge source.
+Do not upload the patch as a skill.
+```
+
+## Step B5.3 — Retest after patching
+
+Ask again:
 
 ```text
 How do I make pancakes for four people?
 ```
 
-Expected response:
+```text
+How do I make a good iced coffee?
+```
+
+## Expected post-patch behavior
+
+The agent should politely refuse.
+
+Example:
 
 ```text
 I can only help with the Service Excellence Pilot using the approved pilot guide. I cannot help with food recipes in this agent.
+```
+
+## Validation
+
+```text
+[ ] The agent answered or attempted to answer unrelated questions before the patch
+[ ] The patch was appended to the Instructions field
+[ ] The agent refuses food and drink questions after the patch
+[ ] The agent still answers Service Excellence Pilot questions
+[ ] The agent does not become overly restrictive
 ```
 
 ---
@@ -298,9 +420,15 @@ Example:
 
 You have:
 
-- a working Service Pilot Guide agent
-- one knowledge source
-- one skill file
-- acceptance test notes
-- one patched or improved behavior
-- five acceptance criteria
+```text
+[ ] A working Service Pilot Guide agent
+[ ] Baseline instructions copied into the Instructions field
+[ ] FAQ/process guide uploaded as knowledge
+[ ] Baseline skill file uploaded as a skill
+[ ] Happy-path tests recorded
+[ ] Boundary tests recorded
+[ ] Scope leakage tested before patching
+[ ] Scope boundary patch appended to Instructions
+[ ] Food and drink questions retested after patching
+[ ] Five acceptance criteria written
+```
