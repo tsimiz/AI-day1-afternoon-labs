@@ -10,6 +10,12 @@ Use this canvas during the end-of-day workshop.
 
 ```
 
+## Source event or knowledge source
+
+```text
+
+```
+
 ## User group
 
 ```text
@@ -22,13 +28,13 @@ Use this canvas during the end-of-day workshop.
 
 ```
 
-## What the agent should do
+## What the agent or documentation should help with
 
 ```text
 
 ```
 
-## What the agent must not do
+## What it must not do
 
 ```text
 
@@ -82,6 +88,12 @@ Use this canvas during the end-of-day workshop.
 
 ```
 
+## Refresh or review cycle
+
+```text
+
+```
+
 ## First small pilot step
 
 ```text
@@ -93,6 +105,12 @@ Use this canvas during the end-of-day workshop.
 # Report-out summary
 
 Use case:
+
+```text
+
+```
+
+Source material:
 
 ```text
 
