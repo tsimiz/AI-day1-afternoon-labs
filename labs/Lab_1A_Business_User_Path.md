@@ -1,337 +1,270 @@
-# Lab 1A — Business User Path
+# Lab 1A — Morning Recap with Copilot
 
-## From demo pattern to useful work output
+## Turn the morning session into useful documentation
 
 Time: 13:10–14:30  
 Audience: Business users, service operations, project managers, documentation owners, product support, managers
 
 ## Purpose
 
-In the morning demos, you saw how Copilot can summarize, structure, and verify information.
+In the morning, you learned about M365 Copilot, grounding, permissions, prompting, agents, responsible AI, verification, hallucinations, and scope leakage.
 
-In this lab, you will apply the same pattern, but you will not simply repeat the demos. You will choose an audience, choose an output, and verify the result.
+In this lab, you will use Copilot to turn the morning transcript into useful documentation.
+
+You are not just summarizing a meeting. You are creating reusable learning material.
 
 ## Learning objectives
 
 By the end of this lab, you can:
 
-- upload local synthetic files into Copilot
-- use the Goal, Context, Source, Format, Verification pattern
-- create role-specific work outputs
-- ask Copilot to show evidence
-- identify where human judgment is still required
+- use Copilot with a Teams transcript or training notes
+- create a useful recap from a long session
+- tailor notes for different audiences
+- extract a glossary of important terms
+- create a practical checklist
+- ask Copilot to verify claims against the transcript
 
 ## Safety reminder
 
-Use only the synthetic files provided.
+Use only the training transcript and approved training materials.
 
 Do not upload real patient data, customer-confidential information, production screenshots, credentials, live service tickets, internal secrets, or regulated data.
 
 ---
 
-# Exercise A1 — Same meeting, different audience
+# Required files
+
+Use the available morning files:
+
+```text
+data/morning/Day1_Morning_Teams_Transcript.docx
+data/morning/Day1_Morning_Teams_Transcript.txt
+data/morning/Day1_Morning_Chat_Questions.md
+data/morning/Day1_Morning_Slide_Outline.md
+```
+
+If both `.docx` and `.txt` transcript files are available, use whichever works best in your Copilot environment.
+
+---
+
+# Exercise A1 — Create a useful morning recap
 
 Time: 13:10–13:30
 
 ## File to upload
 
+Upload the morning transcript.
+
+Optional supporting files:
+
 ```text
-01_Service_Excellence_Pilot_Meeting_Transcript.docx
+Day1_Morning_Chat_Questions.md
+Day1_Morning_Slide_Outline.md
 ```
+
+## Prompt
+
+```text
+Using the uploaded morning transcript, create a concise recap of the morning session.
+
+Include:
+- the main topics covered
+- key takeaways
+- practical examples
+- important warnings or responsible AI points
+- terms that participants should remember
+
+Keep it useful for someone who attended but wants clean notes.
+```
+
+## Follow-up prompt
+
+```text
+Rewrite the recap as a one-page participant handout.
+
+Use clear headings and practical language.
+
+Avoid hype. Focus on what participants should remember and use.
+```
+
+## Verification prompt
+
+```text
+Show which parts of the transcript support the top five points in this recap.
+
+If a point is inferred rather than directly stated, label it as an inference.
+
+If the transcript does not support a point, remove it or mark it as "Needs confirmation".
+```
+
+## Output to capture
+
+```text
+Morning recap:
+Top five source-supported points:
+One point that needs confirmation:
+```
+
+---
+
+# Exercise A2 — Create role-specific notes
+
+Time: 13:30–13:50
 
 ## Task
 
 Choose one audience:
 
-- senior stakeholder
+- business user
 - service operations manager
-- quality/compliance reviewer
-- documentation owner
+- technical lead
+- compliance or governance reviewer
+- executive sponsor
 
-Create a summary for that audience.
-
-## Prompt option — Service operations manager
+## Prompt
 
 ```text
-Using the uploaded meeting transcript, create a summary for a service operations manager.
+Using the uploaded morning transcript, create notes for a [selected audience].
 
 Focus on:
-- decisions that affect service operations
-- actions owned by service operations
-- risks related to triage and handover
-- unresolved questions that could block the pilot
+- what this audience needs to understand
+- what they should start doing differently
+- risks or cautions relevant to them
+- practical next steps
 
-Keep it under 250 words.
+Do not invent anything that was not discussed. If something is unclear, mark it as "Needs confirmation".
 ```
 
-## Prompt option — Quality/compliance reviewer
+## Optional follow-up prompt
 
 ```text
-Using the uploaded meeting transcript, create a summary for a quality/compliance reviewer.
+Turn these notes into a short briefing that this audience could read in under three minutes.
 
-Focus on:
-- data-handling risks
-- guardrails
-- unsafe uses that were ruled out
-- unresolved governance decisions
-- items that need evidence or review
-
-Use concise bullet points.
-```
-
-## Prompt option — Documentation owner
-
-```text
-Using the uploaded meeting transcript, create a summary for the documentation owner.
-
-Focus on:
-- what documentation must be created
-- what sections the guide should include
-- open questions about source of truth
-- actions and due dates related to documentation
-
-Create a practical task list.
+Use:
+- key message
+- why it matters
+- what to do next
+- what to avoid
 ```
 
 ## Verification prompt
 
 ```text
-Show which parts of the transcript support the top three points in your summary.
+For each major recommendation, identify whether it is directly supported by the transcript or inferred from the discussion.
 
-If any point is an inference, label it as an inference.
+Mark inferred recommendations clearly.
 ```
 
 ## Output to capture
 
 ```text
-Audience:
-Summary:
-Top three source-supported points:
-One item needing confirmation:
+Selected audience:
+Role-specific notes:
+Recommended next steps:
+Items needing confirmation:
 ```
 
 ---
 
-# Exercise A2 — Build the artifact the stakeholder needs
+# Exercise A3 — Create a glossary of key concepts
 
-Time: 13:30–13:55
+Time: 13:50–14:10
 
-## Files to upload
-
-```text
-02_Service_Excellence_Pilot_Pilot_Plan.docx
-03_Service_Excellence_Pilot_Service_Metrics.xlsx
-04_Service_Excellence_Pilot_Risks_and_Dependencies.docx
-```
-
-## Task
-
-Choose one output:
-
-- steering committee status report
-- quality/compliance risk brief
-- project manager action dashboard
-- service operations update email
-
-## Prompt option — Steering committee status report
+## Prompt
 
 ```text
-Using the uploaded files, create a steering committee status report for the Service Excellence Pilot.
+Using the uploaded morning transcript, create a glossary of important terms from the morning.
 
 Include:
-- overall status
-- progress
-- key metrics
-- top risks
-- decisions needed
-- next steps
+- term
+- plain-language explanation
+- why it matters
+- one example from the training context if available
 
-Use a calm, professional tone.
-
-Do not invent dates or metrics. Mark missing information clearly.
+Focus on terms such as:
+- Copilot
+- grounding
+- Microsoft Graph
+- permissions
+- prompt
+- agent
+- knowledge source
+- safe refusal
+- hallucination
+- scope leakage
 ```
 
-## Prompt option — Quality/compliance risk brief
+## Follow-up prompt
 
 ```text
-Using the uploaded files, create a quality and compliance risk brief.
+Rewrite the glossary for someone who is new to AI tools.
 
-Focus on:
-- data-handling risks
-- governance gaps
-- agent or Copilot misuse risks
-- decisions that require human approval
-- recommended controls
-
-Use a table with Risk, Evidence, Impact, Mitigation, and Owner.
-```
-
-## Prompt option — Project manager action dashboard
-
-```text
-Using the uploaded files, create a project manager action dashboard.
-
-Include:
-- action
-- owner
-- due date
-- dependency
-- status
-- risk if delayed
-
-Use a table.
-Do not invent missing owners or dates.
-```
-
-## Prompt option — Service operations update email
-
-```text
-Using the uploaded files, draft a short internal update email for service operations.
-
-The email should explain:
-- what the pilot is about
-- what changes for service operations
-- what risks or open questions remain
-- what people should do next
-
-Keep it practical and under 300 words.
+Keep explanations short, concrete, and practical.
 ```
 
 ## Verification prompt
 
 ```text
-Add a Source Notes section.
+Which glossary terms were explicitly discussed in the transcript?
 
-For each major claim, say which uploaded file supports it.
-
-If the claim is inferred from multiple files, label it as an inference.
+Which terms are inferred from the training topic but not clearly explained in the transcript?
 ```
 
 ## Output to capture
 
 ```text
-Chosen artifact:
-Draft output:
-Source notes:
-One gap requiring confirmation:
+Glossary:
+Terms explicitly supported by the transcript:
+Terms needing trainer confirmation:
 ```
 
 ---
 
-# Exercise A3 — Email thread to communication package
+# Exercise A4 — Create a practical checklist
 
-Time: 13:55–14:15
+Time: 14:10–14:30
 
-## File to upload
+## Prompt
 
 ```text
-05_Service_Excellence_Pilot_Email_Thread.docx
+Using the morning transcript, create a practical checklist for applying today's morning lessons at work.
+
+Organize it into:
+- before using Copilot
+- while prompting
+- before sharing output
+- when building or testing an agent
+- when handling sensitive or regulated information
+
+Keep it practical and concise.
 ```
 
-## Task
-
-Create two outputs:
-
-1. internal action tracker
-2. reply email confirming decisions and asking for clarification
-
-## Prompt 1 — Action tracker
+## Follow-up prompt
 
 ```text
-Using the uploaded email thread, create an internal action tracker.
+Turn the checklist into a "Do / Don't" table.
 
-Include:
-- confirmed action
-- owner
-- due date
-- evidence from the thread
-- confidence level
-- open dependency
-
-Do not assign ownership if the thread is unclear.
-```
-
-## Prompt 2 — Reply email
-
-```text
-Draft a short reply email that confirms the agreed action plan.
-
-The reply should:
-- confirm completed or agreed actions
-- politely ask for clarification on unresolved items
-- avoid overclaiming certainty
-- sound professional but not robotic
-```
-
-## Prompt 3 — Improve tone
-
-```text
-Make the reply email slightly warmer and more human, but keep it concise.
-
-Do not add new facts.
-```
-
-## Verification prompt
-
-```text
-Which email confirms Sofia completed the required-fields action?
-
-Which item still needs confirmation?
+Focus on practical behavior, not theory.
 ```
 
 ## Output to capture
 
 ```text
-Action tracker:
-Reply email:
-One verified action:
-One unresolved item:
+Checklist:
+Do / Don't table:
+One habit I will apply this week:
 ```
 
 ---
 
-# Exercise A4 — Apply the pattern to your own safe work scenario
-
-Time: 14:15–14:30
-
-Do not upload real work content.
-
-Fill this out:
-
-```text
-A real work situation where Copilot could help me:
-Source material I would use:
-Output I would ask for:
-What I must verify:
-What data I must not upload:
-Who owns the final decision:
-```
-
-## Optional prompt
-
-```text
-Help me design a safe Copilot prompt for this situation.
-
-Situation:
-[describe the situation without sensitive data]
-
-Source material:
-[describe the type of source]
-
-Desired output:
-[describe the output]
-
-Constraints:
-- do not invent facts
-- mark uncertainty
-- include source notes
-- keep the output business-readable
-```
-
-## Done when
+# Done when
 
 You have:
 
-- one useful work artifact
-- one verification habit
-- one safe prompt idea for your own work
+```text
+[ ] A morning recap
+[ ] Role-specific notes
+[ ] A glossary
+[ ] A practical checklist
+[ ] At least one verification prompt result
+```
