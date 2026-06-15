@@ -1,38 +1,40 @@
-# End-of-Day Workshop — Agent Use Case Canvas
+# End-of-Day Workshop — From Training and Meetings to Useful Agents
 
 Time: 15:30–15:52  
 Audience: All participants
 
 ## Purpose
 
-This workshop turns the day into practical ideas.
+This workshop turns the day into practical Topcon-relevant ideas.
 
-You will work in mixed groups and identify one possible agent use case.
+The new question is:
+
+```text
+What useful documentation or agent could we create from training, meetings, project sessions, or internal knowledge-sharing events?
+```
+
+You will work in mixed groups and identify one possible use case.
 
 The use case should be small, scoped, and useful.
 
 Avoid designing an agent that does everything.
 
-## Group task
+---
 
-Discuss:
+# Group task
 
-```text
-Where could an agent help?
-```
-
-Pick one use case.
+Pick one recurring training, meeting, project session, or knowledge-sharing event.
 
 Then define:
 
-1. Who is the user?
-2. What problem does this solve?
-3. What should the agent do?
-4. What must the agent not do?
-5. What knowledge source would it need?
-6. What risks exist?
-7. What governance or approval is needed?
-8. What is the first small pilot step?
+1. Who needs the recap later?
+2. What source material would the agent or documentation use?
+3. What questions should it answer?
+4. What should it refuse?
+5. Who owns the content?
+6. How often should the source be refreshed?
+7. What risks exist?
+8. What is the first safe pilot?
 
 ---
 
@@ -43,13 +45,15 @@ Copy and fill this in:
 ```markdown
 ## Use case name
 
+## Source event or knowledge source
+
 ## User group
 
 ## Problem this solves
 
-## What the agent should do
+## What the agent or documentation should help with
 
-## What the agent must not do
+## What it must not do
 
 ## Knowledge sources needed
 
@@ -63,6 +67,8 @@ Copy and fill this in:
 
 ## Human owner
 
+## Refresh or review cycle
+
 ## First small pilot step
 ```
 
@@ -71,84 +77,89 @@ Copy and fill this in:
 # Helpful discussion prompts
 
 ```text
-What repeated questions or processes are painful enough to justify an agent?
+What recurring event creates useful knowledge that people forget or cannot find later?
 
-What knowledge source would the agent need?
+Who would benefit from a clean recap or searchable agent?
 
-Who owns that knowledge source?
+What source material would be safe and approved to use?
+
+Who owns that source material?
 
 What should the agent refuse?
 
 What would be the pancake question for this agent — harmless-looking, but out of scope?
 
 What human approval point is needed?
+
+How would we know the first pilot worked?
 ```
 
 ---
 
 # Example use cases
 
-## Internal process guide agent
+## Training recap agent
 
-Helps employees find answers from approved internal process documentation.
+Helps participants revisit a training session and generate notes, checklists, glossary terms, and follow-up questions.
 
 Possible risks:
 
 ```text
-Outdated documents
-Unclear ownership
-Overbroad answers
+Transcript contains sensitive information
+Agent invents details not covered in training
+Agent becomes a general-purpose assistant
 ```
 
 Governance needed:
 
 ```text
-Named document owner
-Review cycle
-Approved source location
+Trainer or content owner reviews transcript
+Clear scope
+Review before wider sharing
 ```
 
 ---
 
-## Service-note quality assistant
+## Project meeting recap assistant
 
-Checks whether a synthetic service note contains required fields before escalation.
+Turns project meetings into action summaries, decision logs, and unresolved-question lists.
 
 Possible risks:
 
 ```text
-Users paste real service data
-Agent overstates readiness
-Missing fields are ignored
+Incorrect owners or due dates
+Confidential customer information in transcript
+Action items inferred too strongly
 ```
 
 Governance needed:
 
 ```text
-Synthetic-only training use
-Clear human approval point
+Project owner reviews output
+Sensitive content handling
+Clear decision ownership
 ```
 
 ---
 
-## Documentation navigator
+## Internal knowledge-sharing navigator
 
-Helps users find the right section across approved process guides.
+Helps employees find key points from recorded enablement sessions or internal briefings.
 
 Possible risks:
 
 ```text
-Split documentation across systems
-Obsolete files
-Weak metadata
+Outdated information
+No content owner
+Agent answers outside the source material
 ```
 
 Governance needed:
 
 ```text
+Named owner
+Refresh cycle
 Source-of-truth decision
-Lifecycle management
-Content ownership
 ```
 
 ---
@@ -159,6 +170,7 @@ Each group shares:
 
 ```text
 One use case
+One source material
 One thing the agent should refuse
 One risk
 One governance requirement
@@ -166,4 +178,4 @@ One governance requirement
 
 ## Done when
 
-Your group has one small, scoped agent use case and one clear refusal boundary.
+Your group has one small, scoped use case and one clear refusal boundary.
