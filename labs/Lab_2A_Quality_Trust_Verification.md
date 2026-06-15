@@ -1,161 +1,172 @@
-# Lab 2A — Quality, Trust, and Verification
+# Lab 2A — Learning Notes and Personal Action Plan
 
 Time: 14:45–15:30  
 Audience: Business users
 
 ## Purpose
 
-This lab focuses on quality and trust.
+This lab turns the morning session into something you can use after the course.
 
-You will practice checking Copilot outputs, improving prompts, and accepting that “not specified” can be the correct answer.
+You will create personal notes, a team follow-up message, and a list of unanswered questions or follow-up topics.
 
 ## Learning objectives
 
 By the end of this lab, you can:
 
-- identify unsupported claims
-- ask Copilot to show evidence
-- reduce hallucination risk through prompt design
-- create a safe-use decision table
-- decide what should not be uploaded or automated
+- turn a transcript into personal learning notes
+- create a team follow-up message
+- identify unanswered questions
+- separate transcript-supported points from inferred points
+- define one action you can take this week
 
 ---
 
-# Exercise A2.1 — “Not specified” is a good answer
+# Required files
+
+Use the morning materials:
+
+```text
+data/morning/Day1_Morning_Teams_Transcript.docx
+data/morning/Day1_Morning_Teams_Transcript.txt
+data/morning/Day1_Morning_Chat_Questions.md
+data/morning/Day1_Morning_Slide_Outline.md
+```
+
+---
+
+# Exercise A2.1 — Create personal learning notes
 
 Time: 14:50–15:05
 
-## File to upload
+## Prompt
 
 ```text
-07_Service_Excellence_Pilot_Data_Handling_Policy_Excerpt.docx
+Using the morning transcript, create a personal learning note for me.
+
+Include:
+- 5 ideas I should remember
+- 3 things I should try at work
+- 3 mistakes to avoid
+- 3 questions I should discuss with my team
+- 1 practical next step for this week
+
+Use plain language.
 ```
 
-## First prompt
+## Follow-up prompt
 
 ```text
-According to the uploaded Service Excellence Pilot policy excerpt, what is the required retention period for pilot escalation notes? Answer briefly.
+Make this more practical and less generic.
+
+Focus on actions I can take in the next two weeks.
 ```
 
 ## Verification prompt
 
 ```text
-Show the exact source text that supports that retention period.
+Which items are directly supported by the transcript?
 
-If no source text exists, say that the policy excerpt does not specify it.
+Which items are inferred from the topics discussed?
+
+Mark inferred items clearly.
 ```
 
-## Improved prompt
+## Output to capture
 
 ```text
-Using only the uploaded policy excerpt, answer this question:
-
-What is the required retention period for pilot escalation notes?
-
-If the uploaded excerpt does not explicitly specify the retention period, say:
-"Not specified in the uploaded excerpt."
-
-Do not infer or guess.
-```
-
-## Expected answer
-
-```text
-Not specified in the uploaded excerpt.
-```
-
-## Reflection
-
-Answer:
-
-```text
-Did Copilot guess?
-Did the verification prompt change the answer?
-What wording helped prevent guessing?
+Five ideas to remember:
+Three things to try:
+Three mistakes to avoid:
+Three team discussion questions:
+One action for this week:
 ```
 
 ---
 
-# Exercise A2.2 — Safe-use decision table
+# Exercise A2.2 — Create a team follow-up message
 
-Time: 15:05–15:20
+Time: 15:05–15:18
 
 ## Prompt
 
 ```text
-Create a safe-use decision table for using Copilot in this training context.
+Using the morning transcript, draft a short message I could send to my team after this training.
 
-Columns:
-- Situation
-- Can I use Copilot?
-- Source material allowed
-- What must I verify?
-- What data must I not include?
-- Human owner or reviewer
+The message should:
+- summarize what we learned
+- explain why it matters
+- suggest one small experiment with Copilot
+- include a reminder about safe and responsible use
 
-Include rows for:
-- meeting transcript summary
-- project status report
-- email action plan
-- policy question
-- customer-facing communication
-- patient-adjacent information
-- agent answer from process guide
+Keep it under 250 words.
 ```
 
-## Validation
-
-Check that the table says:
+## Follow-up prompt
 
 ```text
-[ ] Customer-facing communication requires human review
-[ ] Patient-adjacent information has strong restrictions
-[ ] Policy questions require source evidence
-[ ] Agent answers should be checked against the approved guide
-[ ] The table is practical enough to reuse
+Make the message sound more human and less formal.
+
+Keep it professional, concise, and practical.
+
+Do not add new facts.
+```
+
+## Output to capture
+
+```text
+Team follow-up message:
+One Copilot experiment to suggest:
+Responsible-use reminder:
 ```
 
 ---
 
-# Exercise A2.3 — Rewrite one weak prompt
+# Exercise A2.3 — Find gaps and unanswered questions
 
-Time: 15:20–15:30
+Time: 15:18–15:30
 
-## Weak prompt
-
-```text
-Summarize this and tell me what to do.
-```
-
-## Rewrite it using
+## Prompt
 
 ```text
-Goal:
-Context:
-Source:
-Format:
-Verification:
+Using the morning transcript, identify questions that were raised but not fully answered.
+
+Create a table with:
+- question or topic
+- why it matters
+- who should answer it
+- suggested next step
+
+If the transcript does not contain unanswered questions, identify likely follow-up questions based only on the topics discussed and label them as inferred.
 ```
 
-## Example improved prompt
+## Follow-up prompt
 
 ```text
-Using only the uploaded email thread, create an action tracker for the Service Excellence Pilot.
-
-Context:
-This is for a project manager preparing a follow-up message.
-
-Format:
-Use a table with Action, Owner, Due date, Evidence, and Confidence.
-
-Verification:
-Mark anything unclear as Needs confirmation. Do not invent missing owners or dates.
+Group the questions into:
+- product or licensing
+- governance or compliance
+- practical adoption
+- technical implementation
+- training follow-up
 ```
 
-## Done when
+## Output to capture
+
+```text
+Unanswered or follow-up questions:
+Who should answer them:
+My next step:
+```
+
+---
+
+# Done when
 
 You have:
 
-- one safer prompt
-- one verification habit
-- one safe-use decision table
+```text
+[ ] Personal learning notes
+[ ] A team follow-up message
+[ ] Follow-up questions or gaps
+[ ] One practical next step
+```
