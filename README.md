@@ -1,12 +1,16 @@
-# 🧪 Day 1 Afternoon Labs — Service Excellence Pilot
+# Day 1 Afternoon Labs — Morning Recap and Agent Lab
 
 Welcome to the Day 1 afternoon labs.
 
-This repository contains the lab instructions, worksheets, and agent files for the **Service Excellence Pilot** training scenario.
+In the morning, we covered M365 Copilot, grounding, permissions, prompting, agents, responsible AI, verification, hallucinations, and scope leakage.
 
-The scenario is fictional. All files are synthetic.
+In the afternoon, we will use the **morning Teams transcript and related materials** as the source content.
 
-## ⚠️ Important safety reminder
+The goal is to turn the morning session into useful documentation and a simple recap agent.
+
+## Important safety reminder
+
+Use only the training materials provided for this lab.
 
 Do not upload:
 
@@ -17,27 +21,51 @@ Do not upload:
 - live support tickets
 - internal regulated data
 
-Use only the synthetic files provided for this training.
+If the morning transcript contains anything sensitive, do not use that section. Ask the trainer for the cleaned version.
 
-## 🛤️ Choose your track
+---
 
-### 💼 Track A — Business users
+## Source files
+
+The main source files are in:
+
+```text
+data/morning/
+```
+
+Recommended files:
+
+```text
+data/morning/Day1_Morning_Teams_Transcript.docx
+data/morning/Day1_Morning_Teams_Transcript.txt
+data/morning/Day1_Morning_Chat_Questions.md
+data/morning/Day1_Morning_Slide_Outline.md
+```
+
+Use the transcript if available. Use the slide outline and chat questions as supporting context.
+
+---
+
+## Choose your track
+
+### Track A — Business users
 
 Use M365 Copilot to create:
 
-- role-specific summaries
-- stakeholder reports
-- action trackers
-- safe-use prompts
-- verification habits
+- a recap of the morning session
+- role-specific notes
+- a glossary of key concepts
+- a practical checklist
+- a personal follow-up action plan
+- a team follow-up message
 
 Start here:
 
-[Lab 1A — Business User Path](labs/Lab_1A_Business_User_Path.md)
+[Lab 1A — Morning Recap with Copilot](labs/Lab_1A_Business_User_Path.md)
 
 Then continue here:
 
-[Lab 2A — Quality, Trust, and Verification](labs/Lab_2A_Quality_Trust_Verification.md)
+[Lab 2A — Learning Notes and Action Plan](labs/Lab_2A_Quality_Trust_Verification.md)
 
 Useful worksheets:
 
@@ -47,40 +75,35 @@ Useful worksheets:
 
 ---
 
-### 🛠️ Track B — Technical users / power users
+### Track B — Technical users / power users
 
-Use Copilot Studio to:
+Use Copilot Studio to create a **Morning Recap Agent**.
 
-- build a scoped agent
-- add a knowledge source
-- add skill guidance
-- test expected behavior
-- expose scope leakage
-- patch and retest boundaries
+The agent will help participants review what was covered in the morning session.
 
 Start here:
 
-[Lab 1B — Copilot Studio Agent Path](labs/Lab_1B_Copilot_Studio_Agent_Path.md)
+[Lab 1B — Morning Recap Agent](labs/Lab_1B_Copilot_Studio_Agent_Path.md)
 
 Then continue here:
 
-[Lab 2B — Agent Quality and Guardrails](labs/Lab_2B_Agent_Quality_Guardrails.md)
+[Lab 2B — Agent Testing and Boundaries](labs/Lab_2B_Agent_Quality_Guardrails.md)
 
 Useful files:
 
 [Agent Instructions](agent/09_Copilot_Studio_Agent_Instructions.md)
 
-[Service Pilot Guide Skill](agent/Service_Pilot_Guide_Skill.md)
+[Agent Skill](agent/Service_Pilot_Guide_Skill.md)
 
 [Scope Boundary Patch](agent/Service_Pilot_Guide_Scope_Boundary_Patch.md)
 
-[Demo Test Questions](agent/Service_Pilot_Guide_Demo_Test_Questions.md)
+[Agent Test Questions](agent/Service_Pilot_Guide_Demo_Test_Questions.md)
 
 [Track B Agent Test Results](worksheets/Track_B_Agent_Test_Results.md)
 
 ---
 
-## 🤝 Shared workshop
+## Shared workshop
 
 All participants use this at the end of the day:
 
@@ -90,8 +113,14 @@ Workshop worksheet:
 
 [Agent Use Case Canvas](worksheets/Agent_Use_Case_Canvas.md)
 
-## 📂 Data files
+---
 
-The synthetic source files are in the `data` folder.
+## Backup synthetic files
 
-Only upload the files requested in each lab.
+If the morning transcript is not available or cannot be used, the trainer may use the synthetic Service Excellence Pilot files instead.
+
+Backup files may be stored in:
+
+```text
+data/backup-synthetic/
+```
