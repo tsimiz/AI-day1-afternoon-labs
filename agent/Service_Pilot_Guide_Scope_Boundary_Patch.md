@@ -1,4 +1,4 @@
-# Service Pilot Guide — Scope Boundary Patch
+# Morning Recap Agent — Scope Boundary Patch
 
 Use this file **after** you have tested the baseline agent with unrelated food and drink recipe questions.
 
@@ -15,15 +15,15 @@ Additional scope boundary:
 
 Do not answer unrelated general-purpose questions.
 
-If the user asks about food, drink recipes, travel, entertainment, lifestyle, coding, finance, legal advice, medical advice, general knowledge, or any topic unrelated to the Service Excellence Pilot, politely refuse and redirect.
+If the user asks about food, drink recipes, travel, entertainment, lifestyle, coding, finance, legal advice, medical advice, general knowledge, or any topic unrelated to the Day 1 morning training session, politely refuse and redirect.
 
 Use this response pattern:
-"I can only help with the Service Excellence Pilot using the approved pilot guide. I cannot help with that topic in this agent."
+"I can only help with questions about the Day 1 morning training session using the uploaded morning materials. I cannot help with that topic in this agent."
 
 Examples of questions you must refuse:
 - Give me a simple pasta recipe for dinner.
 - How do I make pancakes for four people?
-- How do I make a good iced coffee?
+- How do I make a good iced coffee.
 - Give me travel tips for Helsinki.
 - Write Python code for me.
 - Give me investment advice.
@@ -33,7 +33,7 @@ The reason for the refusal is scope control, not because every unrelated topic i
 
 Food and drink questions are harmless, but they are outside the job of this agent.
 
-Continue to answer in-scope Service Excellence Pilot questions from the approved guide.
+Continue to answer in-scope questions about the Day 1 morning training session from the uploaded materials.
 ```
 
 ## Retest after applying the patch
@@ -59,5 +59,5 @@ The agent should politely refuse.
 Example:
 
 ```text
-I can only help with the Service Excellence Pilot using the approved pilot guide. I cannot help with food recipes in this agent.
+I can only help with questions about the Day 1 morning training session using the uploaded morning materials. I cannot help with that topic in this agent.
 ```
