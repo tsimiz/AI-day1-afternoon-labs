@@ -1,4 +1,4 @@
-# Track A Lab Worksheet
+# Track A Lab Worksheet — Morning Recap
 
 Use this worksheet to capture your outputs from the business-user labs.
 
@@ -6,21 +6,15 @@ Use this worksheet to capture your outputs from the business-user labs.
 
 # Lab 1A — Exercise A1
 
-## Same meeting, different audience
+## Morning recap
 
-Audience selected:
-
-```text
-
-```
-
-Summary:
+Morning recap:
 
 ```text
 
 ```
 
-Top three source-supported points:
+Top five source-supported points:
 
 ```text
 1.
@@ -28,9 +22,13 @@ Top three source-supported points:
 2.
 
 3.
+
+4.
+
+5.
 ```
 
-One item needing confirmation:
+One point that needs confirmation:
 
 ```text
 
@@ -40,27 +38,27 @@ One item needing confirmation:
 
 # Lab 1A — Exercise A2
 
-## Build the artifact the stakeholder needs
+## Role-specific notes
 
-Chosen artifact:
-
-```text
-
-```
-
-Draft output:
+Audience selected:
 
 ```text
 
 ```
 
-Source notes:
+Role-specific notes:
 
 ```text
 
 ```
 
-One gap requiring confirmation:
+Recommended next steps:
+
+```text
+
+```
+
+Items needing confirmation:
 
 ```text
 
@@ -70,27 +68,21 @@ One gap requiring confirmation:
 
 # Lab 1A — Exercise A3
 
-## Email thread to communication package
+## Glossary
 
-Action tracker:
-
-```text
-
-```
-
-Reply email:
+Glossary:
 
 ```text
 
 ```
 
-One verified action:
+Terms explicitly supported by the transcript:
 
 ```text
 
 ```
 
-One unresolved item:
+Terms needing trainer confirmation:
 
 ```text
 
@@ -100,39 +92,21 @@ One unresolved item:
 
 # Lab 1A — Exercise A4
 
-## Apply the pattern to your own safe work scenario
+## Practical checklist
 
-A real work situation where Copilot could help me:
-
-```text
-
-```
-
-Source material I would use:
+Checklist:
 
 ```text
 
 ```
 
-Output I would ask for:
+Do / Don't table:
 
 ```text
 
 ```
 
-What I must verify:
-
-```text
-
-```
-
-What data I must not upload:
-
-```text
-
-```
-
-Who owns the final decision:
+One habit I will apply this week:
 
 ```text
 
@@ -140,16 +114,82 @@ Who owns the final decision:
 
 ---
 
-# My safer prompt
+# Lab 2A — Personal learning notes
+
+Five ideas to remember:
 
 ```text
-Goal:
+1.
 
-Context:
+2.
 
-Source:
+3.
 
-Format:
+4.
 
-Verification:
+5.
+```
+
+Three things to try:
+
+```text
+1.
+
+2.
+
+3.
+```
+
+Three mistakes to avoid:
+
+```text
+1.
+
+2.
+
+3.
+```
+
+Three team discussion questions:
+
+```text
+1.
+
+2.
+
+3.
+```
+
+One action for this week:
+
+```text
+
+```
+
+---
+
+# Team follow-up message
+
+```text
+
+```
+
+---
+
+# Follow-up questions or gaps
+
+```text
+
+```
+
+Who should answer them:
+
+```text
+
+```
+
+My next step:
+
+```text
+
 ```
